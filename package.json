@@ -1,0 +1,23 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishme0708/dsa.git"
+  },
+  "author": "Nishant Mehta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishme0708/dsa/issues"
+  },
+  "homepage": "https://github.com/nishme0708/dsa#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
