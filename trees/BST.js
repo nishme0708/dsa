@@ -61,6 +61,24 @@ class BST {
         }
         return found;
     }
+
+    BFS() {
+        let start = this.root;
+        let queue = [];
+        let result = [];
+        queue.push(start);
+        while (queue.length) {
+            let element = queue.shift();
+            result.push(element.value);
+            if (element.left) {
+                queue.push(element.left);
+            }
+            if (element.right) {
+                queue.push(element.right);
+            }
+        }
+        console.log(result);
+    }
 }
 
 var bst = new BST();
