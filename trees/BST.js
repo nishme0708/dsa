@@ -91,6 +91,18 @@ class BST {
         traverse(current);
         console.log(data);
     }
+
+    DFSPostOrder() {
+        let data = [];
+        let current = this.root;
+        function traverse(node) {
+            if (node.left) traverse(node.left);
+            if (node.right) traverse(node.right);
+            data.push(node.value);
+        }
+        traverse(current);
+        console.log(data);
+    }
 }
 
 var bst = new BST();
