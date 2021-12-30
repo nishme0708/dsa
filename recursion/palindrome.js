@@ -5,3 +5,17 @@ function palindrome(word) {
     }
     return false;
 }
+
+function decbin(dec) {
+    if (dec == 0 || dec == 1) {
+        return '' + dec;
+    }
+    let res = '';
+    if (dec % 2 == 0) {
+        res = '0';
+    } else {
+        res = '1';
+        dec--;
+    }
+    return decbin(dec / 2) + res;
+}
